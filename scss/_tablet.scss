@@ -1,0 +1,260 @@
+@media (min-width: 768px) and (max-width: 1200px){
+
+/* generales */
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.85rem;
+    line-height: 2.85rem;
+}
+
+.texto_secundarios{
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.up__contenedor{
+    position: fixed;
+    z-index: 2000;
+    top: 85%;
+    left: 85%;
+}
+
+/* ----------header---------- */
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    padding: 30px 0px 30px 0px;
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    div.izquierda{
+        flex-basis: 20%;
+    }
+    div.derecha{
+        flex-basis: 10%;
+    }
+    a{
+        flex-basis: 20%;
+    }
+    nav{
+        flex-basis: 50%;
+        ul{
+            padding: 0px;
+            margin: 0px;
+            font-weight: 400;
+            font-size: 2rem;
+            list-style-type: none;
+            :hover{
+                font-style: italic;
+                color: #27424e;
+            }
+            li{
+                display: inline-block;
+                position: relative;
+                padding: 20px 0px 20px 0px;
+                width: 100px;
+                a{
+                    text-decoration: none;
+                    color: #27424e;
+                }
+                .shop{
+                    padding-left: 12px;
+                }
+            }
+            .estoyEnEstaSeccion{
+                color: #75b1a3;
+            }
+            .redes{
+                img{
+                    width: 26px;
+                    vertical-align: middle;
+                    padding-right: 10px;
+                }
+                .behance{
+                    width: 29px;
+                }
+            }
+        }  
+    }
+
+    
+    
+
+}
+
+/* ----------index---------- */
+
+#gridIndex{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 280px auto auto auto 280px;
+    grid-template-areas:
+    ". . . . ."
+    ". moneda intro intro ."
+    "ferrero ferrero ferrero ferrero ferrero"
+    "agenda agenda agenda agenda agenda"
+    "tortugas tortugas tortugas tortugas tortugas"
+    "footer footer footer footer footer";
+}
+
+/* ----------intro---------- */
+
+section#moneda{
+    justify-self: right;
+    padding-right: 30px;
+}
+    
+section#intro{
+    width: auto;
+}
+    
+/* ----------portfolios---------- */
+
+section#ferrero{
+    div{
+        flex-direction: row;
+    }
+}
+
+section#agenda{
+    div{
+        flex-direction: row;
+    }
+}
+
+section#tortugas{
+    div{
+        flex-direction: row;
+    }
+}
+
+/* ----------footer---------- */
+
+footer{
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    div{
+        font-size: 1.6rem;
+        .redes{
+            img{
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+/* ----------nosotros---------- */
+
+#gridNosotros{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px auto auto 280px;
+    grid-template-areas:
+    ". . . . ."
+    ". constanza descripcionConstanza descripcionConstanza ."
+    ". pablo descripcionPablo descripcionPablo ."
+    "footer footer footer footer footer";
+}
+
+section#constanza{
+    img{
+        width: 125px;
+    }
+}
+
+section#pablo{
+    img{
+        width: 125px;
+    }
+}
+
+section#descripcionPablo{
+    margin-bottom: 100px;
+}
+    
+/* ----------proyectos---------- */
+
+#gridProyecto{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px auto auto 280px;
+    grid-template-areas:
+    ". . . . ."
+    ". portfolioGeneral portfolioDescripcion portfolioDescripcion ."
+    "portfolioMockups portfolioMockups portfolioMockups portfolioMockups portfolioMockups"
+    "footer footer footer footer footer";
+}
+
+/* ----------shop---------- */
+
+#gridShop{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px auto 280px;
+    grid-template-areas:
+    ". . . . ."
+    "carrousel carrousel carrousel carrousel carrousel"
+    "footer footer footer footer footer";
+}
+
+/* ----------contacto---------- */
+
+#gridContacto{
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 140px auto auto auto 280px;
+    grid-template-areas:
+    ". . . . ."
+    ". map map map ."
+    ". aqui aquiDerecha aquiDerecha ."
+    ". form formDerecha formDerecha ."
+    "footer footer footer footer footer";
+}
+
+section#aquiDerecha{
+    grid-area: aquiDerecha;
+    align-self: baseline;
+    margin-bottom: 50px;
+    div.datos{
+        display: flex;
+        flex-direction: column;
+        div{
+            margin: 25px 0px 25px 0px;
+            .redes{
+                vertical-align: middle;
+                padding: 50px 20px 0px 0px;
+                .behance{
+                    width: 20px;
+                }
+            }
+        }
+    }
+    p.intro_datos{
+        width: auto;
+    }
+}
+
+label{
+    font-size: 1.7rem;
+    line-height: 3rem;
+}
+
+section#formDerecha{
+    form{
+        input[type=submit], input[type=reset]{
+            font-size: 1.75rem;
+        }
+    }
+}
+}

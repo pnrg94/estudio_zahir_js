@@ -1,0 +1,764 @@
+@media (min-width: 1200px) {
+  /* generales */
+  h2 {
+    font-size: 3.5rem; }
+  h3 {
+    font-size: 3rem; }
+  h4 {
+    font-size: 2rem; }
+  p {
+    font-size: 2rem;
+    line-height: 3rem; }
+  .texto_secundarios {
+    font-size: 1.7rem;
+    line-height: 1.7rem; }
+  .up__contenedor {
+    position: fixed;
+    z-index: 2000;
+    top: 85%;
+    left: 92%; }
+  /* ----------header---------- */
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    padding: 30px 0px 30px 0px;
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    header div.izquierda {
+      flex-basis: 20%; }
+    header div.derecha {
+      flex-basis: 10%; }
+    header a {
+      flex-basis: 20%; }
+    header nav {
+      flex-basis: 50%; }
+      header nav ul {
+        padding: 0px;
+        margin: 0px;
+        font-weight: 400;
+        font-size: 2rem;
+        list-style-type: none; }
+        header nav ul :hover {
+          font-style: italic;
+          color: #27424e; }
+        header nav ul li {
+          display: inline-block;
+          position: relative;
+          padding: 20px 0px 20px 0px;
+          width: 100px; }
+          header nav ul li a {
+            text-decoration: none;
+            color: #27424e; }
+          header nav ul li .shop {
+            padding-left: 12px; }
+        header nav ul .estoyEnEstaSeccion {
+          color: #75b1a3; }
+        header nav ul .redes img {
+          width: 26px;
+          vertical-align: middle;
+          padding-right: 10px; }
+        header nav ul .redes .behance {
+          width: 29px; }
+  /* ----------index---------- */
+  #gridIndex {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 140px 280px auto auto auto 280px;
+    grid-template-areas: ". . . . ." ". moneda intro intro ." "ferrero ferrero ferrero ferrero ferrero" "agenda agenda agenda agenda agenda" "tortugas tortugas tortugas tortugas tortugas" ". footer footer footer ."; }
+  /* ----------intro---------- */
+  section#moneda {
+    justify-self: right;
+    padding-right: 30px; }
+  section#intro {
+    width: 500px; }
+  /* ----------portfolios---------- */
+  section#ferrero div {
+    flex-direction: row; }
+  section#agenda div {
+    flex-direction: row; }
+  section#tortugas div {
+    flex-direction: row; }
+  /* ----------footer---------- */
+  footer {
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    footer div {
+      font-size: 1.6rem; }
+      footer div .redes img {
+        padding-top: 20px; }
+  /* ----------nosotros---------- */
+  #gridNosotros {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 140px auto auto 280px;
+    grid-template-areas: ". . . . ." ". constanza descripcionConstanza descripcionConstanza ." ". pablo descripcionPablo descripcionPablo ." ". footer footer footer ."; }
+  section#constanza img {
+    width: 60%; }
+  section#pablo img {
+    width: 60%; }
+  section#descripcionPablo {
+    margin-bottom: 140px; }
+  /* ----------proyectos---------- */
+  #gridProyecto {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 140px auto auto 280px;
+    grid-template-areas: ". . . . ." ". portfolioGeneral portfolioDescripcion portfolioDescripcion ." "portfolioMockups portfolioMockups portfolioMockups portfolioMockups portfolioMockups" ". footer footer footer ."; }
+  /* ----------shop---------- */
+  #gridShop {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 140px auto 280px;
+    grid-template-areas: ". . . . ." ". carrousel carrousel carrousel ." ". footer footer footer ."; }
+  /* ----------contacto---------- */
+  #gridContacto {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 140px auto auto auto 280px;
+    grid-template-areas: ". . . . ." ". map map map ." ". aqui aquiDerecha aquiDerecha aquiDerecha" ". form formDerecha formDerecha ." ". footer footer footer ."; }
+  section#aquiDerecha {
+    grid-area: aquiDerecha;
+    align-self: baseline;
+    margin-bottom: 50px; }
+    section#aquiDerecha div.datos {
+      display: flex;
+      flex-direction: row; }
+      section#aquiDerecha div.datos div {
+        margin-right: 50px; }
+        section#aquiDerecha div.datos div .redes {
+          vertical-align: middle;
+          padding: 50px 20px 0px 0px; }
+          section#aquiDerecha div.datos div .redes .behance {
+            width: 20px; }
+    section#aquiDerecha p.intro_datos {
+      width: 600px; }
+  label {
+    font-size: 2rem;
+    line-height: 3rem; }
+  section#formDerecha form input[type=submit], section#formDerecha form input[type=reset] {
+    font-size: 2rem; } }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* generales */
+  h2 {
+    font-size: 3rem; }
+  h3 {
+    font-size: 2.5rem; }
+  h4 {
+    font-size: 2rem; }
+  p {
+    font-size: 1.85rem;
+    line-height: 2.85rem; }
+  .texto_secundarios {
+    font-size: 1.6rem;
+    line-height: 1.6rem; }
+  .up__contenedor {
+    position: fixed;
+    z-index: 2000;
+    top: 85%;
+    left: 85%; }
+  /* ----------header---------- */
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    padding: 30px 0px 30px 0px;
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    header div.izquierda {
+      flex-basis: 20%; }
+    header div.derecha {
+      flex-basis: 10%; }
+    header a {
+      flex-basis: 20%; }
+    header nav {
+      flex-basis: 50%; }
+      header nav ul {
+        padding: 0px;
+        margin: 0px;
+        font-weight: 400;
+        font-size: 2rem;
+        list-style-type: none; }
+        header nav ul :hover {
+          font-style: italic;
+          color: #27424e; }
+        header nav ul li {
+          display: inline-block;
+          position: relative;
+          padding: 20px 0px 20px 0px;
+          width: 100px; }
+          header nav ul li a {
+            text-decoration: none;
+            color: #27424e; }
+          header nav ul li .shop {
+            padding-left: 12px; }
+        header nav ul .estoyEnEstaSeccion {
+          color: #75b1a3; }
+        header nav ul .redes img {
+          width: 26px;
+          vertical-align: middle;
+          padding-right: 10px; }
+        header nav ul .redes .behance {
+          width: 29px; }
+  /* ----------index---------- */
+  #gridIndex {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 280px auto auto auto 280px;
+    grid-template-areas: ". . . . ." ". moneda intro intro ." "ferrero ferrero ferrero ferrero ferrero" "agenda agenda agenda agenda agenda" "tortugas tortugas tortugas tortugas tortugas" "footer footer footer footer footer"; }
+  /* ----------intro---------- */
+  section#moneda {
+    justify-self: right;
+    padding-right: 30px; }
+  section#intro {
+    width: auto; }
+  /* ----------portfolios---------- */
+  section#ferrero div {
+    flex-direction: row; }
+  section#agenda div {
+    flex-direction: row; }
+  section#tortugas div {
+    flex-direction: row; }
+  /* ----------footer---------- */
+  footer {
+    flex-flow: row wrap;
+    justify-content: space-evenly; }
+    footer div {
+      font-size: 1.6rem; }
+      footer div .redes img {
+        padding-top: 20px; }
+  /* ----------nosotros---------- */
+  #gridNosotros {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px auto auto 280px;
+    grid-template-areas: ". . . . ." ". constanza descripcionConstanza descripcionConstanza ." ". pablo descripcionPablo descripcionPablo ." "footer footer footer footer footer"; }
+  section#constanza img {
+    width: 125px; }
+  section#pablo img {
+    width: 125px; }
+  section#descripcionPablo {
+    margin-bottom: 100px; }
+  /* ----------proyectos---------- */
+  #gridProyecto {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px auto auto 280px;
+    grid-template-areas: ". . . . ." ". portfolioGeneral portfolioDescripcion portfolioDescripcion ." "portfolioMockups portfolioMockups portfolioMockups portfolioMockups portfolioMockups" "footer footer footer footer footer"; }
+  /* ----------shop---------- */
+  #gridShop {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px auto 280px;
+    grid-template-areas: ". . . . ." "carrousel carrousel carrousel carrousel carrousel" "footer footer footer footer footer"; }
+  /* ----------contacto---------- */
+  #gridContacto {
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 140px auto auto auto 280px;
+    grid-template-areas: ". . . . ." ". map map map ." ". aqui aquiDerecha aquiDerecha ." ". form formDerecha formDerecha ." "footer footer footer footer footer"; }
+  section#aquiDerecha {
+    grid-area: aquiDerecha;
+    align-self: baseline;
+    margin-bottom: 50px; }
+    section#aquiDerecha div.datos {
+      display: flex;
+      flex-direction: column; }
+      section#aquiDerecha div.datos div {
+        margin: 25px 0px 25px 0px; }
+        section#aquiDerecha div.datos div .redes {
+          vertical-align: middle;
+          padding: 50px 20px 0px 0px; }
+          section#aquiDerecha div.datos div .redes .behance {
+            width: 20px; }
+    section#aquiDerecha p.intro_datos {
+      width: auto; }
+  label {
+    font-size: 1.7rem;
+    line-height: 3rem; }
+  section#formDerecha form input[type=submit], section#formDerecha form input[type=reset] {
+    font-size: 1.75rem; } }
+
+@media (max-width: 768px) {
+  /* generales */
+  h2 {
+    font-size: 3rem; }
+  h3 {
+    font-size: 2.5rem; }
+  h4 {
+    font-size: 2rem; }
+  p {
+    font-size: 1.7rem;
+    line-height: 2.7rem; }
+  .texto_secundarios {
+    font-size: 1.5rem;
+    line-height: 1.5rem; }
+  .up__contenedor {
+    position: fixed;
+    z-index: 2000;
+    top: 85%;
+    left: 75%; }
+  /* ----------header---------- */
+  header {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    padding: 30px 0px 30px 0px;
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    header div.izquierda {
+      flex-basis: 20%; }
+    header div.derecha {
+      flex-basis: 10%; }
+    header a {
+      flex-basis: 20%; }
+    header nav {
+      flex-basis: 50%; }
+      header nav ul {
+        padding: 0px;
+        margin: 0px;
+        font-weight: 400;
+        font-size: 2rem;
+        list-style-type: none; }
+        header nav ul :hover {
+          font-style: italic;
+          color: #27424e; }
+        header nav ul li {
+          display: inline-block;
+          position: relative;
+          padding: 20px 0px 20px 0px;
+          width: 100px; }
+          header nav ul li a {
+            text-decoration: none;
+            color: #27424e; }
+          header nav ul li .shop {
+            padding-left: 12px; }
+        header nav ul .estoyEnEstaSeccion {
+          color: #75b1a3; }
+        header nav ul .redes img {
+          width: 26px;
+          vertical-align: middle;
+          padding-right: 10px; }
+        header nav ul .redes .behance {
+          width: 29px; }
+  /* ----------index---------- */
+  #gridIndex {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 360px auto auto auto auto auto;
+    grid-template-areas: ". . ." ". moneda ." ". intro ." "ferrero ferrero ferrero" "agenda agenda agenda" "tortugas tortugas tortugas" ". footer ."; }
+  /* ----------intro---------- */
+  section#moneda {
+    justify-self: center; }
+  section#intro {
+    text-align: center; }
+  /* ----------portfolios---------- */
+  section#ferrero {
+    margin-top: 50px; }
+    section#ferrero div {
+      flex-direction: column;
+      align-items: center; }
+      section#ferrero div h3 {
+        text-align: center; }
+        section#ferrero div h3 a {
+          text-align: center; }
+  section#agenda div {
+    flex-direction: column;
+    align-items: center; }
+    section#agenda div h3 {
+      text-align: center; }
+      section#agenda div h3 a {
+        text-align: center; }
+  section#tortugas div {
+    flex-direction: column;
+    align-items: center; }
+    section#tortugas div h3 {
+      text-align: center; }
+      section#tortugas div h3 a {
+        text-align: center; }
+  /* ----------footer---------- */
+  footer {
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px 80px 0px; }
+    footer div {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      text-align: center; }
+      footer div div {
+        margin: 20px 0px 0px 20px; }
+  /* ----------nosotros---------- */
+  #gridNosotros {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 320px auto auto auto auto auto;
+    grid-template-areas: ". . ." ". constanza ." ". descripcionConstanza ." ". pablo ." ". descripcionPablo ." ". footer ."; }
+  section#constanza img {
+    width: 200px; }
+  section#pablo img {
+    width: 200px; }
+  section#descripcionPablo {
+    margin-bottom: 50px; }
+  /* ----------proyectos---------- */
+  #gridProyecto {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 320px auto auto auto auto;
+    grid-template-areas: ". . ." ". portfolioGeneral ." ". portfolioDescripcion ." "portfolioMockups portfolioMockups portfolioMockups" ". footer ."; }
+  /* ----------shop---------- */
+  #gridShop {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 320px auto auto;
+    grid-template-areas: ". . ." "carrousel carrousel carrousel" ". footer ."; }
+  /* ----------contacto---------- */
+  #gridContacto {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 320px auto auto auto auto auto auto;
+    grid-template-areas: ". . ." "map map map" ". aqui ." ". aquiDerecha ." ". form ." ". formDerecha ." ". footer ."; }
+  section#aquiDerecha {
+    grid-area: aquiDerecha;
+    align-self: baseline;
+    margin-bottom: 50px; }
+    section#aquiDerecha div.datos {
+      display: flex;
+      flex-direction: column; }
+      section#aquiDerecha div.datos div {
+        margin: 25px 0px 25px 0px; }
+        section#aquiDerecha div.datos div .redes {
+          vertical-align: middle;
+          padding: 50px 20px 0px 0px; }
+          section#aquiDerecha div.datos div .redes .behance {
+            width: 20px; }
+    section#aquiDerecha p.intro_datos {
+      width: auto; }
+  label {
+    font-size: 1.7rem;
+    line-height: 2.5rem; }
+  section#formDerecha form input[type=submit], section#formDerecha form input[type=reset] {
+    font-size: 1.5rem; } }
+
+/* generales */
+* {
+  padding: 0pt;
+  margin: 0pt; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: freight-display-pro, serif;
+  color: #27424e; }
+
+h2 {
+  font-weight: 400; }
+
+h3 {
+  font-weight: 400; }
+
+h4 {
+  font-weight: 500; }
+
+p {
+  font-weight: 400;
+  padding-top: 20px; }
+
+.texto_secundarios {
+  font-weight: 500;
+  padding-top: 0px; }
+
+.ingles {
+  font-weight: 300;
+  font-style: italic;
+  color: #75b1a3; }
+
+/* ----------index---------- */
+#gridIndex {
+  display: grid;
+  justify-content: center;
+  justify-items: start;
+  align-items: center; }
+
+/* ----------intro---------- */
+section#moneda {
+  grid-area: moneda; }
+  section#moneda:hover {
+    transform: scale(1.1);
+    transition: transform 2s; }
+
+section#intro {
+  grid-area: intro; }
+
+/* ----------portfolios---------- */
+section#ferrero {
+  grid-area: ferrero;
+  height: 800px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  section#ferrero:hover div {
+    opacity: 100%;
+    color: white; }
+  section#ferrero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+  section#ferrero div {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    opacity: 0%;
+    transition: opacity 2s;
+    background-image: linear-gradient(to right, #27424e, #487375);
+    justify-content: center; }
+    section#ferrero div div {
+      flex-basis: 20%; }
+    section#ferrero div h3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-basis: 20%;
+      height: 100%; }
+      section#ferrero div h3 a {
+        text-decoration: none;
+        color: white; }
+
+section#agenda {
+  grid-area: agenda;
+  height: 800px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  section#agenda:hover div {
+    opacity: 100%;
+    color: white; }
+  section#agenda img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+  section#agenda div {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    opacity: 0%;
+    transition: opacity 2s;
+    background-image: linear-gradient(to right, #27424e, #487375);
+    justify-content: center; }
+    section#agenda div div {
+      flex-basis: 20%; }
+    section#agenda div h3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-basis: 20%;
+      height: 100%; }
+      section#agenda div h3 a {
+        text-decoration: none;
+        color: white; }
+
+section#tortugas {
+  grid-area: tortugas;
+  height: 800px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  section#tortugas:hover div {
+    opacity: 100%;
+    color: white; }
+  section#tortugas img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+  section#tortugas div {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    opacity: 0%;
+    transition: opacity 2s;
+    background-image: linear-gradient(to right, #27424e, #487375);
+    justify-content: center; }
+    section#tortugas div div {
+      flex-basis: 20%; }
+    section#tortugas div h3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-basis: 20%;
+      height: 100%; }
+      section#tortugas div h3 a {
+        text-decoration: none;
+        color: white; }
+
+/* ----------footer---------- */
+footer {
+  grid-area: footer;
+  display: flex;
+  width: 100%;
+  justify-items: left; }
+  footer div {
+    flex-basis: 20%; }
+    footer div p {
+      font-weight: 300; }
+    footer div .redes {
+      padding-right: 20px; }
+      footer div .redes img {
+        width: 20px;
+        vertical-align: middle; }
+      footer div .redes .behance {
+        width: 23px; }
+
+/* ----------nosotros---------- */
+#gridNosotros {
+  display: grid;
+  justify-content: center;
+  justify-items: start;
+  align-items: center; }
+
+section#constanza {
+  grid-area: constanza;
+  align-self: baseline;
+  margin-top: 100px; }
+  section#constanza div.datos_secundarios {
+    margin-top: 30px; }
+  section#constanza img {
+    margin-top: 20px;
+    border-radius: 50%; }
+
+section#descripcionConstanza {
+  grid-area: descripcionConstanza;
+  align-self: baseline;
+  margin-bottom: 50px; }
+  section#descripcionConstanza .textoItalico {
+    font-style: italic; }
+
+section#pablo {
+  grid-area: pablo;
+  align-self: baseline; }
+  section#pablo div.datos_secundarios {
+    margin-top: 30px; }
+  section#pablo img {
+    margin-top: 20px;
+    border-radius: 50%; }
+
+section#descripcionPablo {
+  grid-area: descripcionPablo;
+  align-self: baseline; }
+  section#descripcionPablo .textoItalico {
+    font-style: italic; }
+
+/* ----------proyectos---------- */
+#gridProyecto {
+  display: grid;
+  justify-content: center;
+  justify-items: start;
+  align-items: center; }
+
+section#portfolioGeneral {
+  grid-area: portfolioGeneral;
+  align-self: baseline;
+  margin-top: 100px; }
+  section#portfolioGeneral div.datos_secundarios {
+    margin-top: 30px; }
+
+section#portfolioDescripcion {
+  grid-area: portfolioDescripcion;
+  align-self: baseline;
+  margin-bottom: 50px; }
+
+section#portfolioMockups {
+  grid-area: portfolioMockups;
+  height: auto;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/* ----------shop---------- */
+#gridShop {
+  display: grid;
+  justify-content: center;
+  justify-items: start;
+  align-items: center; }
+
+section#carrousel {
+  grid-area: carrousel;
+  padding-top: 50px; }
+
+/* ----------contacto---------- */
+#gridContacto {
+  display: grid;
+  justify-content: center;
+  justify-items: start;
+  align-items: center; }
+
+section#map {
+  grid-area: map;
+  width: 100%;
+  margin-top: 70px; }
+
+section#aqui {
+  grid-area: aqui;
+  align-self: baseline;
+  margin-top: 70px; }
+
+label {
+  font-weight: 400;
+  padding-top: 20px; }
+
+section#form {
+  grid-area: form;
+  align-self: baseline; }
+
+section#formDerecha {
+  grid-area: formDerecha;
+  align-self: baseline;
+  margin-bottom: 50px; }
+  section#formDerecha form input[type=text], section#formDerecha form input[type=email], section#formDerecha form textarea, section#formDerecha form select {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 5px, solid, #27424e;
+    margin-top: 25px; }
+  section#formDerecha form input[type=checkbox] {
+    margin-left: 20px; }
+  section#formDerecha form input[type=submit], section#formDerecha form input[type=reset] {
+    font-weight: 400;
+    border: none;
+    background: #27424e;
+    color: white;
+    padding: 10px;
+    margin-top: 10px; }
+    section#formDerecha form input[type=submit]:hover, section#formDerecha form input[type=reset]:hover {
+      border: none;
+      transition: background 0.5s;
+      background: #75b1a3;
+      color: white;
+      padding: 10px;
+      margin-top: 10px; }
