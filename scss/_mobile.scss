@@ -31,6 +31,10 @@ p{
     left: 75%;
 }
 
+.navbar{
+    justify-content: flex-end;
+}
+
 /* ----------header---------- */
 
 header{
@@ -42,55 +46,44 @@ header{
     background-color: white;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    div.izquierda{
-        flex-basis: 20%;
-    }
-    div.derecha{
-        flex-basis: 10%;
-    }
-    a{
-        flex-basis: 20%;
-    }
+    justify-content: space-between;
     nav{
-        flex-basis: 50%;
         ul{
             padding: 0px;
-            margin: 0px;
+            margin: 30px 0px 0px 0px;
             font-weight: 400;
             font-size: 2rem;
             list-style-type: none;
+            display: flex;
+            flex-direction: column;
             :hover{
                 font-style: italic;
                 color: #27424e;
             }
             li{
-                display: inline-block;
-                position: relative;
+
                 padding: 20px 0px 20px 0px;
-                width: 100px;
+                width: auto;
+                border-bottom: #27424e solid 1px;
                 a{
                     text-decoration: none;
                     color: #27424e;
-                }
-                .shop{
-                    padding-left: 12px;
                 }
             }
             .estoyEnEstaSeccion{
                 color: #75b1a3;
             }
-            .redes{
-                img{
-                    width: 26px;
-                    vertical-align: middle;
-                    padding-right: 10px;
-                }
-                .behance{
-                    width: 29px;
-                }
+        }
+        .redes{
+            img{
+                width: 26px;
+                vertical-align: middle;
+                padding-right: 10px;
             }
-        }  
+            .behance{
+                width: 29px;
+            }
+        }
     }
 }
 
@@ -98,7 +91,7 @@ header{
 
 #gridIndex{
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 360px auto auto auto auto auto;
+    grid-template-rows: 180px auto auto auto auto auto;
     grid-template-areas:
     ". . ."
     ". moneda ."
