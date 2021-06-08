@@ -267,7 +267,7 @@
     font-size: 1.7rem;
     line-height: 3rem; }
   section#formDerecha form input[type=submit], section#formDerecha form input[type=reset] {
-    font-size: 1.75rem; } }
+    font-size: 5rem; } }
 
 @media (max-width: 768px) {
   /* generales */
@@ -727,6 +727,8 @@ section#formDerecha {
   margin-bottom: 50px; }
   section#formDerecha form input[type=text], section#formDerecha form input[type=email], section#formDerecha form textarea, section#formDerecha form select {
     width: 100%;
+    font-size: 2rem;
+    color: #27424e;
     border-top: none;
     border-left: none;
     border-right: none;

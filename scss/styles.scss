@@ -385,6 +385,8 @@ section#formDerecha{
     form{
         input[type=text], input[type=email], textarea, select{
             width: 100%;
+            font-size: 2rem;
+            color: #27424e;
             border-top: none;
             border-left: none;
             border-right: none;
