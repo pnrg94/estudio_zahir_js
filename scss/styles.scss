@@ -257,7 +257,6 @@ footer{
 section#constanza{
     grid-area: constanza;
     align-self: baseline;
-    margin-top: 100px;
     div.datos_secundarios{
         margin-top: 30px;
     }
@@ -308,7 +307,6 @@ section#descripcionPablo{
 section#portfolioGeneral{
     grid-area: portfolioGeneral;
     align-self: baseline;
-    margin-top: 100px;
     div.datos_secundarios{
         margin-top: 30px;
     }
@@ -342,7 +340,6 @@ section#portfolioMockups{
 
 section#carrousel{
     grid-area: carrousel;
-    padding-top: 50px;
 }
 
 /* ----------contacto---------- */
@@ -357,7 +354,6 @@ section#carrousel{
 section#map{
     grid-area: map;
     width: 100%;
-    margin-top: 70px;
 }
 
 section#aqui{

@@ -95,7 +95,7 @@
   /* ----------nosotros---------- */
   #gridNosotros {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 140px auto auto 280px;
+    grid-template-rows: 240px auto auto 280px;
     grid-template-areas: ". . . . ." ". constanza descripcionConstanza descripcionConstanza ." ". pablo descripcionPablo descripcionPablo ." ". footer footer footer ."; }
   section#constanza img {
     width: 60%; }
@@ -106,17 +106,17 @@
   /* ----------proyectos---------- */
   #gridProyecto {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 140px auto auto 280px;
+    grid-template-rows: 240px auto auto 280px;
     grid-template-areas: ". . . . ." ". portfolioGeneral portfolioDescripcion portfolioDescripcion ." "portfolioMockups portfolioMockups portfolioMockups portfolioMockups portfolioMockups" ". footer footer footer ."; }
   /* ----------shop---------- */
   #gridShop {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 140px auto 280px;
+    grid-template-rows: 240px auto 280px;
     grid-template-areas: ". . . . ." ". carrousel carrousel carrousel ." ". footer footer footer ."; }
   /* ----------contacto---------- */
   #gridContacto {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 140px auto auto auto 280px;
+    grid-template-rows: 240px auto auto auto 280px;
     grid-template-areas: ". . . . ." ". map map map ." ". aqui aquiDerecha aquiDerecha aquiDerecha" ". form formDerecha formDerecha ." ". footer footer footer ."; }
   section#aquiDerecha {
     grid-area: aquiDerecha;
@@ -233,7 +233,7 @@
   /* ----------nosotros---------- */
   #gridNosotros {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px auto auto 280px;
+    grid-template-rows: 180px auto auto 280px;
     grid-template-areas: ". . . . ." ". constanza descripcionConstanza descripcionConstanza ." ". pablo descripcionPablo descripcionPablo ." "footer footer footer footer footer"; }
   section#constanza img {
     width: 125px; }
@@ -244,12 +244,12 @@
   /* ----------proyectos---------- */
   #gridProyecto {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px auto auto 280px;
+    grid-template-rows: 180px auto auto 280px;
     grid-template-areas: ". . . . ." ". portfolioGeneral portfolioDescripcion portfolioDescripcion ." "portfolioMockups portfolioMockups portfolioMockups portfolioMockups portfolioMockups" "footer footer footer footer footer"; }
   /* ----------shop---------- */
   #gridShop {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px auto 280px;
+    grid-template-rows: 140px auto 280px;
     grid-template-areas: ". . . . ." "carrousel carrousel carrousel carrousel carrousel" "footer footer footer footer footer"; }
   /* ----------contacto---------- */
   #gridContacto {
@@ -344,7 +344,7 @@
   /* ----------index---------- */
   #gridIndex {
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 180px auto auto auto auto auto;
+    grid-template-rows: 135px auto auto auto auto auto;
     grid-template-areas: ". . ." ". moneda ." ". intro ." "ferrero ferrero ferrero" "agenda agenda agenda" "tortugas tortugas tortugas" ". footer ."; }
   /* ----------intro---------- */
   section#moneda {
@@ -393,7 +393,7 @@
   /* ----------nosotros---------- */
   #gridNosotros {
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 320px auto auto auto auto auto;
+    grid-template-rows: 150px auto auto auto auto auto;
     grid-template-areas: ". . ." ". constanza ." ". descripcionConstanza ." ". pablo ." ". descripcionPablo ." ". footer ."; }
   section#constanza img {
     width: 200px; }
@@ -404,17 +404,17 @@
   /* ----------proyectos---------- */
   #gridProyecto {
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 320px auto auto auto auto;
+    grid-template-rows: 150px auto auto auto auto;
     grid-template-areas: ". . ." ". portfolioGeneral ." ". portfolioDescripcion ." "portfolioMockups portfolioMockups portfolioMockups" ". footer ."; }
   /* ----------shop---------- */
   #gridShop {
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 320px auto auto;
+    grid-template-rows: 150px auto auto;
     grid-template-areas: ". . ." "carrousel carrousel carrousel" ". footer ."; }
   /* ----------contacto---------- */
   #gridContacto {
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 320px auto auto auto auto auto auto;
+    grid-template-rows: 150px auto auto auto auto auto auto;
     grid-template-areas: ". . ." "map map map" ". aqui ." ". aquiDerecha ." ". form ." ". formDerecha ." ". footer ."; }
   section#aquiDerecha {
     grid-area: aquiDerecha;
@@ -641,8 +641,7 @@ footer {
 
 section#constanza {
   grid-area: constanza;
-  align-self: baseline;
-  margin-top: 100px; }
+  align-self: baseline; }
   section#constanza div.datos_secundarios {
     margin-top: 30px; }
   section#constanza img {
@@ -680,8 +679,7 @@ section#descripcionPablo {
 
 section#portfolioGeneral {
   grid-area: portfolioGeneral;
-  align-self: baseline;
-  margin-top: 100px; }
+  align-self: baseline; }
   section#portfolioGeneral div.datos_secundarios {
     margin-top: 30px; }
 
@@ -708,8 +706,7 @@ section#portfolioMockups {
   align-items: center; }
 
 section#carrousel {
-  grid-area: carrousel;
-  padding-top: 50px; }
+  grid-area: carrousel; }
 
 /* ----------contacto---------- */
 #gridContacto {
@@ -720,8 +717,7 @@ section#carrousel {
 
 section#map {
   grid-area: map;
-  width: 100%;
-  margin-top: 70px; }
+  width: 100%; }
 
 section#aqui {
   grid-area: aqui;

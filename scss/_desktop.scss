@@ -162,7 +162,7 @@ footer{
 
 #gridNosotros{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 140px auto auto 280px;
+    grid-template-rows: 240px auto auto 280px;
     grid-template-areas:
     ". . . . ."
     ". constanza descripcionConstanza descripcionConstanza ."
@@ -190,7 +190,7 @@ section#descripcionPablo{
 
 #gridProyecto{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 140px auto auto 280px;
+    grid-template-rows: 240px auto auto 280px;
     grid-template-areas:
     ". . . . ."
     ". portfolioGeneral portfolioDescripcion portfolioDescripcion ."
@@ -202,7 +202,7 @@ section#descripcionPablo{
 
 #gridShop{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 140px auto 280px;
+    grid-template-rows: 240px auto 280px;
     grid-template-areas:
     ". . . . ."
     ". carrousel carrousel carrousel ."
@@ -213,7 +213,7 @@ section#descripcionPablo{
 
 #gridContacto{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 140px auto auto auto 280px;
+    grid-template-rows: 240px auto auto auto 280px;
     grid-template-areas:
     ". . . . ."
     ". map map map ."
