@@ -122,8 +122,12 @@ section#intro{
 /* ----------portfolios---------- */
 
 section#ferrero{
+    img{
+        height: auto;
+    }
     div{
         flex-direction: row;
+        height: 800px;
     }
 }
 
