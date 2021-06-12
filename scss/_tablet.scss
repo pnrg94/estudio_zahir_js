@@ -118,6 +118,7 @@ section#intro{
 /* ----------portfolios---------- */
 
 section#ferrero{
+    height: 600px;
     img{
         height: auto;
     }
@@ -128,12 +129,14 @@ section#ferrero{
 }
 
 section#agenda{
+    height: 600px;
     div{
         flex-direction: row;
     }
 }
 
 section#tortugas{
+    height: 600px;
     div{
         flex-direction: row;
     }
