@@ -550,7 +550,7 @@ section#ferrero {
       height: 100%; }
       section#ferrero div h3 a {
         text-decoration: none;
-        color: white; }
+        color: #F0D565; }
 
 section#agenda {
   grid-area: agenda;
@@ -592,7 +592,7 @@ section#agenda {
       height: 100%; }
       section#agenda div h3 a {
         text-decoration: none;
-        color: white; }
+        color: #F0D565; }
 
 section#tortugas {
   grid-area: tortugas;
@@ -634,7 +634,7 @@ section#tortugas {
       height: 100%; }
       section#tortugas div h3 a {
         text-decoration: none;
-        color: white; }
+        color: #F0D565; }
 
 /* ----------footer---------- */
 footer {
