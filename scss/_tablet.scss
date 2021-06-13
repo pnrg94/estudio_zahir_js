@@ -201,10 +201,11 @@ section#descripcionPablo{
 
 #gridShop{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 140px auto 280px;
+    grid-template-rows: 140px auto auto 280px;
     grid-template-areas:
     ". . . . ."
     "carrousel carrousel carrousel carrousel carrousel"
+    "productos productos productos productos productos"
     "footer footer footer footer footer";
 }
 

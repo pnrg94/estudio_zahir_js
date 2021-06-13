@@ -261,8 +261,8 @@
   /* ----------shop---------- */
   #gridShop {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 140px auto 280px;
-    grid-template-areas: ". . . . ." "carrousel carrousel carrousel carrousel carrousel" "footer footer footer footer footer"; }
+    grid-template-rows: 140px auto auto 280px;
+    grid-template-areas: ". . . . ." "carrousel carrousel carrousel carrousel carrousel" "productos productos productos productos productos" "footer footer footer footer footer"; }
   /* ----------contacto---------- */
   #gridContacto {
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
@@ -426,8 +426,8 @@
   /* ----------shop---------- */
   #gridShop {
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 150px auto auto;
-    grid-template-areas: ". . ." "carrousel carrousel carrousel" ". footer ."; }
+    grid-template-rows: 150px auto auto auto;
+    grid-template-areas: ". . ." "carrousel carrousel carrousel" "productos productos productos" ". footer ."; }
   /* ----------contacto---------- */
   #gridContacto {
     grid-template-columns: 1fr 4fr 1fr;
@@ -736,75 +736,40 @@ section#productos {
   width: 100%; }
   section#productos div.productos-titulos {
     margin: 50px; }
-  section#productos h2 {
-    text-align: center; }
-  section#productos section#merchandising {
+    section#productos div.productos-titulos h2 {
+      text-align: center; }
+  section#productos section.productos {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap; }
-    section#productos section#merchandising div.producto {
+    section#productos section.productos div.producto {
       width: 250px;
       border-radius: 5px;
       margin: 20px;
       border: 1px solid #bfbfbf; }
-      section#productos section#merchandising div.producto img {
+      section#productos section.productos div.producto img {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px; }
-      section#productos section#merchandising div.producto .producto-texto {
+      section#productos section.productos div.producto .producto-texto {
         padding: 10px 10px 10px 20px; }
-        section#productos section#merchandising div.producto .producto-texto p {
+        section#productos section.productos div.producto .producto-texto p {
           padding: 0px;
           color: #75b1a3;
           font-variant: small-caps;
           font-size: 3rem; }
-      section#productos section#merchandising div.producto .producto-boton {
+      section#productos section.productos div.producto .producto-boton {
         background-color: #75b1a3;
         border-radius: 5px;
         margin: 0px 10px 10px 10px;
         padding: 5px;
         text-align: center; }
-        section#productos section#merchandising div.producto .producto-boton a {
+        section#productos section.productos div.producto .producto-boton a {
           font-weight: 700;
           font-size: 1.8rem;
           text-decoration: none;
           color: white; }
-        section#productos section#merchandising div.producto .producto-boton:hover {
-          transition: background 0.5s;
-          background: #27424e;
-          color: white; }
-  section#productos section#editorial {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap; }
-    section#productos section#editorial div.producto {
-      width: 250px;
-      border-radius: 5px;
-      margin: 20px;
-      border: 1px solid #bfbfbf; }
-      section#productos section#editorial div.producto img {
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px; }
-      section#productos section#editorial div.producto .producto-texto {
-        padding: 10px 10px 10px 20px; }
-        section#productos section#editorial div.producto .producto-texto p {
-          padding: 0px;
-          color: #75b1a3;
-          font-variant: small-caps;
-          font-size: 3rem; }
-      section#productos section#editorial div.producto .producto-boton {
-        background-color: #75b1a3;
-        border-radius: 5px;
-        margin: 0px 10px 10px 10px;
-        padding: 5px;
-        text-align: center; }
-        section#productos section#editorial div.producto .producto-boton a {
-          font-weight: 700;
-          font-size: 1.8rem;
-          text-decoration: none;
-          color: white; }
-        section#productos section#editorial div.producto .producto-boton:hover {
+        section#productos section.productos div.producto .producto-boton:hover {
           transition: background 0.5s;
           background: #27424e;
           color: white; }
