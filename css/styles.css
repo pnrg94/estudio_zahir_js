@@ -118,7 +118,7 @@
   #gridShop {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 240px auto auto 280px;
-    grid-template-areas: ". . . . ." ". carrousel carrousel carrousel ." ". productos productos productos ." ". footer footer footer ."; }
+    grid-template-areas: ". . . . ." ". carrousel carrousel carrousel ." "productos productos productos productos productos" ". footer footer footer ."; }
   /* ----------contacto---------- */
   #gridContacto {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -746,7 +746,7 @@ section#productos {
     section#productos section.productos div.producto {
       width: 250px;
       border-radius: 5px;
-      margin: 20px;
+      margin: 15px;
       border: 1px solid #bfbfbf; }
       section#productos section.productos div.producto img {
         border-top-left-radius: 5px;
