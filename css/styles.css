@@ -368,6 +368,7 @@
     height: 400px;
     margin-top: 50px;
     background-image: url("../images/ferrero/index_mobile.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
     section#ferrero img {
@@ -384,6 +385,7 @@
   section#agenda {
     height: 400px;
     background-image: url("../images/agenda/index_mobile.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
     section#agenda img {
@@ -399,6 +401,7 @@
   section#tortugas {
     height: 400px;
     background-image: url("../images/tortugas/index_mobile.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
     section#tortugas img {
