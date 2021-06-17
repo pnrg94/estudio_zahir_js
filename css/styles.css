@@ -366,8 +366,12 @@
   /* ----------portfolios---------- */
   section#ferrero {
     height: 400px;
-    margin-top: 50px; }
+    margin-top: 50px;
+    background-image: url("../images/ferrero/index_mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center center; }
     section#ferrero img {
+      display: none;
       height: auto; }
     section#ferrero div {
       flex-direction: column;
@@ -378,7 +382,13 @@
         section#ferrero div h3 a {
           text-align: center; }
   section#agenda {
-    height: 400px; }
+    height: 400px;
+    background-image: url("../images/agenda/index_mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center center; }
+    section#agenda img {
+      display: none;
+      height: auto; }
     section#agenda div {
       flex-direction: column;
       align-items: center; }
@@ -387,7 +397,13 @@
         section#agenda div h3 a {
           text-align: center; }
   section#tortugas {
-    height: 400px; }
+    height: 400px;
+    background-image: url("../images/tortugas/index_mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center center; }
+    section#tortugas img {
+      display: none;
+      height: auto; }
     section#tortugas div {
       flex-direction: column;
       align-items: center; }

@@ -122,7 +122,11 @@ section#moneda{
 section#ferrero{
     height: 400px;
     margin-top: 50px;
+    background-image: url('../images/ferrero/index_mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
     img{
+        display: none;
         height: auto;
     }
     div{
@@ -140,6 +144,13 @@ section#ferrero{
 
 section#agenda{
     height: 400px;
+    background-image: url('../images/agenda/index_mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    img{
+        display: none;
+        height: auto;
+    }
     div{
         flex-direction: column;
         align-items: center;
@@ -154,6 +165,13 @@ section#agenda{
 
 section#tortugas{
     height: 400px;
+    background-image: url('../images/tortugas/index_mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    img{
+        display: none;
+        height: auto;
+    }
     div{
         flex-direction: column;
         align-items: center;
