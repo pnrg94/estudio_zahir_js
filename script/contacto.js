@@ -21,6 +21,10 @@ const guardarFormulario = () =>{
         alert("Ingrese su nombre");
         return;
     }
+    if ($("#email").val() == ""){
+        alert("Ingrese su mail");
+        return;
+    }
 
     const formulario = new Formulario ($("#nombre-apellido").val(), $("#email").val(), $("#pais").val(), $("#como-nos-conociste").val(), $("#producto-servicio").val(), $("#lineas").val(), $("#personalidad").val(), $("#marcas").val(), $("#piezas").val())
     formularios.push(formulario);
@@ -30,4 +34,9 @@ const guardarFormulario = () =>{
 let boton = document.getElementById("guardarFormulario"); //$("#guardarFormulario");
 if (boton){
     boton.addEventListener("click", guardarFormulario)
+}
+
+const mostrarFormulario = () => {
+    const formularios = JSON.parse(localStorage.getItem("formularios"));
+    console.log(formularios);
 }
