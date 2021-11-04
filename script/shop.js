@@ -1,57 +1,46 @@
+//constructor de libros
 class libro{
-    constructor (id, titulo, autor, anio, ejemplares){
+    constructor (id, titulo, autor, precio, imagen, link){
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
-        this.anio = anio;
-        this.ejemplares = parseInt(ejemplares);
-    }
-    retirar(cantidadRetirar){
-        if (this.ejemplares >= cantidadRetirar){
-            alert ("Se compraron " + cantidadRetirar + " ejemplares de " + this.titulo + ". Quedan aún " + this.verificarStock(cantidadRetirar) + " en stock.");
-        }else{
-            alert("No hay suficiente stock para retirar. Tenemos a disposición: " + this.ejemplares + " ejemplares.");
-        }
-    }
-    verificarStock(cantidadRetirar){
-        return this.ejemplares - cantidadRetirar
+        this.precio = parseFloat(precio);
+        this.imagen = imagen;
+        this.link = link;
+        //this.ejemplares = parseInt(ejemplares);
     }
 }
 
+//shop
 const shop = [];
 
-const libro1 = new libro(1, "El Aleph", "Jorge Luis Borges", 1949, 15);
-const libro2 = new libro(2, "Un día a la vez", "Zahir", 2018, 3);
-const libro3 = new libro(3, "Crónicas del crimen", "Antología", 2016, 10);
+const libro1 = new libro(1, "El Alepha", "Jorge Luis Borges", 3500, "../images/shop/productos/el_aleph.jpg", "https://www.mercadolibre.com.ar/");
+const libro2 = new libro(2, "Un día a la vez", "Zahir", 900, "../images/shop/productos/agenda_un_dia_a_la_vez.jpg", "https://www.mercadolibre.com.ar/");
+const libro3 = new libro(3, "Crónicas del crimen", "Varios autores", 2500, "../images/shop/productos/cronicas_del_crimen.jpg", "https://www.mercadolibre.com.ar/");
 
 shop.push(libro1);
 shop.push(libro2);
 shop.push(libro3);
 
-alert("Bienvendio a la tienda de Estudio Zahir. Tenemos a la venta los siguientes títulos (al finalizar, deberá ingresar el número que identifica al libro que desee comprar).");
-
-for (const libro of shop){
-    alert(libro.id + ". " + libro.titulo + " (" + libro.autor + "). Hay disponibles " + libro.ejemplares + " ejemplares para retirar.");
-}
-
-let libros = parseInt(prompt("Ingrese el número que idenfitica al libro que desea."));
-
-const cantidadRetirar = prompt("¿Cuantos ejemplares desea comprar?");
-
-switch(libros){
-    case 1:
-        libro1.retirar(cantidadRetirar)
-        break;
-
-    case 2:
-        libro2.retirar(cantidadRetirar)
-        break;
-
-    case 3:
-        libro3.retirar(cantidadRetirar)
-        break;
-        
-    default:
-    alert("Ingreso algun dato invalido o simplemente no quiere realizar un pedido. Muchas gracias, que tenga un buen día.")
+//generador de card en html
+const mostrarLibros = () => {
+    for (const libro of shop){
+        let contenedor = document.createElement('div');
+        contenedor.innerHTML =
+        `
+        <div class="producto">
+            <img src="${libro.imagen}">
+            <div class="producto-texto">
+                <h3 class="producto_nombre">${libro.titulo}</h3>
+                <h4>${libro.autor}</h4>
+                <p>ar$ ${libro.precio}</p>
+            </div>
+            <div class="producto-boton">
+                <a href="${libro.link}" target="_blank">Comprar</a>
+            </div>
+        </div>
+        `
+        document.getElementById('libros').appendChild(contenedor);
+    }
 }
 
