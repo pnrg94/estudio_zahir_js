@@ -16,7 +16,7 @@ const shop = [];
 
 const libro1 = new libro(1, "El Alepha", "Jorge Luis Borges", 3500, "../images/shop/productos/el_aleph.jpg", "https://www.mercadolibre.com.ar/");
 const libro2 = new libro(2, "Un día a la vez", "Zahir", 900, "../images/shop/productos/agenda_un_dia_a_la_vez.jpg", "https://www.mercadolibre.com.ar/");
-const libro3 = new libro(3, "Crónicas del crimen", "Varios autores", 2500, "../images/shop/productos/cronicas_del_crimen.jpg", "https://www.mercadolibre.com.ar/");
+const libro3 = new libro(3, "Crónicas del cri...", "Varios autores", 2500, "../images/shop/productos/cronicas_del_crimen.jpg", "https://www.mercadolibre.com.ar/");
 
 shop.push(libro1);
 shop.push(libro2);
