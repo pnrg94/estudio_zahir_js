@@ -40,7 +40,7 @@ $("#email").blur((a) =>{
 
 const formularios = [];
 
-$('#guardarFormulario').click(function (e){
+$('#guardarFormulario').submit(function (e){
     e.preventDefault();
 
 /*     if ($("#nombre-apellido").val() == ""){
