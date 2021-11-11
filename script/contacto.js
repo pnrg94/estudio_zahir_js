@@ -14,95 +14,51 @@ class Formulario{
     }
 }
 
-//shop
+//Validación de formulario
 
-/* $("#nombre-apellido").blur((e) =>{
-    if ($("#nombre-apellido").val() == ""){
-        $("#nombre-apellido").css({'border-bottom':'#000000'});
-        console.log(error);
+$("#nombre-apellido").blur((a) =>{
+    if (a.target.value.length < 3){
+        $("#nombre-apellido").css("border-bottom", "1px solid red");
+        $(".nombre-apellido").css("display", "block");
     } else {
-        $("#nombre-apellido").css({'border-bottom':'#8a8f91'});
+        $("#nombre-apellido").css("border-bottom", "1px solid #8a8f91");
+        $(".nombre-apellido").css("display", "none");
     }
-}); */
+});
 
-//   IDEA 1
+$("#email").blur((a) =>{
+    if($("#email").val().indexOf('@', 0) == -1 || $("#email").val().indexOf('.', 0) == -1) {
+        $("#email").css("border-bottom", "1px solid red");
+        $(".email").css("display", "block");
+    } else {
+        $("#email").css("border-bottom", "1px solid #8a8f91");
+        $(".email").css("display", "none");
+    }
+});
+
+// Formulario
 
 const formularios = [];
 
-const guardarFormulario = () =>{
-    if ($("#nombre-apellido").val() == ""){ 
-        alert("Ingrese su nombre");
+$('#guardarFormulario').click(function (e){
+    e.preventDefault();
+
+/*     if ($("#nombre-apellido").val() == ""){
         return;
-    }
+    } 
     if ($("#email").val() == ""){
-        alert("Ingrese su mail");
         return;
     }
-    const formulario = new Formulario ($("#nombre-apellido").val(), $("#email").val(), $("#pais").val(), $("#como-nos-conociste").val(), $("#producto-servicio").val(), $("#lineas").val(), $("#personalidad").val(), $("#marcas").val(), $("#piezas").val())
-    formularios.push(formulario);
-    localStorage.setItem("formularios", JSON.stringify(formularios))
-}
-
-let boton = document.getElementById("guardarFormulario"); //$("#guardarFormulario");
-if (boton){
-    boton.addEventListener("click", guardarFormulario)
-}
-
-
-
-
-/*    IDEA 2
-
-const formularios = [];
-
-const guardarFormulario = () =>{
-    if ($("#nombre-apellido").val() == ""){
-        alert("Ingrese su nombre");
-        return;
-    }
-    if ($("#email").val() == ""){
-        alert("Ingrese su mail");
-        return;
-    }
-    const formulario = new Formulario ($("#nombre-apellido").val(), $("#email").val(), $("#pais").val(), $("#como-nos-conociste").val(), $("#producto-servicio").val(), $("#lineas").val(), $("#personalidad").val(), $("#marcas").val(), $("#piezas").val())
-    formularios.push(formulario);
-    localStorage.setItem("formularios", JSON.stringify(formularios))
-}
-
-$('#formContacto').submit(guardarFormulario);
 */
-
-
-
-/*    IDEA 3
-
-const formularios = [];
-
-$('#formContacto').submit(function (e){
-    if ($("#nombre-apellido").val() == ""){
-        alert("Ingrese su nombre");
-        return;
-    }
-    if ($("#email").val() == ""){
-        alert("Ingrese su mail");
-        return;
-    }
-
     const formulario = new Formulario ($("#nombre-apellido").val(), $("#email").val(), $("#pais").val(), $("#como-nos-conociste").val(), $("#producto-servicio").val(), $("#lineas").val(), $("#personalidad").val(), $("#marcas").val(), $("#piezas").val())
     formularios.push(formulario);
     localStorage.setItem("formularios", JSON.stringify(formularios));
 });
-*/
+
 
 const mostrarFormulario = () => {
     const formularios = JSON.parse(localStorage.getItem("formularios"));
     console.log(formularios);
 }
-
-/* $("#formContacto").submit(function (e){
-    e.preventDefault ();
-    const formularios = JSON.parse(localStorage.getItem("formularios"));
-    console.log(formularios);
-}) */
 
 
