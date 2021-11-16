@@ -18,21 +18,41 @@ class Formulario{
 
 $("#nombre-apellido").blur((a) =>{
     if (a.target.value.length < 3){
-        $("#nombre-apellido").css("border-bottom", "1px solid red");
-        $(".nombre-apellido").css("display", "block");
+        $("#nombre-apellido").css({ "transition": "border-bottom 1s",
+                                    "border-bottom": "1px solid red"});
+        $(".nombre-apellido").fadeIn(100)
+                            .fadeOut(100)
+                            .fadeIn(100)
+                            .fadeOut(100)
+                            .fadeIn(100)
+                            .fadeOut(100)
+                            .fadeIn(100)
+                            .fadeOut(100)
+                            .fadeIn(100);
     } else {
-        $("#nombre-apellido").css("border-bottom", "1px solid #8a8f91");
-        $(".nombre-apellido").css("display", "none");
+        $("#nombre-apellido").css({ "transition": "border-bottom 1s",
+                                    "border-bottom": "1px solid #8a8f91"});
+        $(".nombre-apellido").fadeOut(1000);
     }
 });
 
 $("#email").blur((a) =>{
     if($("#email").val().indexOf('@', 0) == -1 || $("#email").val().indexOf('.', 0) == -1) {
-        $("#email").css("border-bottom", "1px solid red");
-        $(".email").css("display", "block");
+        $("#email").css({ "transition": "border-bottom 1s",
+                                        "border-bottom": "1px solid red"});
+        $(".email").fadeIn(100)
+                    .fadeOut(100)
+                    .fadeIn(100)
+                    .fadeOut(100)
+                    .fadeIn(100)
+                    .fadeOut(100)
+                    .fadeIn(100)
+                    .fadeOut(100)
+                    .fadeIn(100);
     } else {
-        $("#email").css("border-bottom", "1px solid #8a8f91");
-        $(".email").css("display", "none");
+        $("#email").css({   "transition": "border-bottom 1s",
+                            "border-bottom": "1px solid #8a8f91"});
+        $(".email").fadeOut(1000);
     }
 });
 
