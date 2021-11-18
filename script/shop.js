@@ -1,4 +1,4 @@
-//constructor de libros
+/* //constructor de libros
 class libro{
     constructor (id, titulo, autor, precio, imagen, link){
         this.id = id;
@@ -20,28 +20,31 @@ const libro3 = new libro(3, "Crónicas del cri...", "Varios autores", 2500, "../
 
 libreria.push(libro1);
 libreria.push(libro2);
-libreria.push(libro3);
+libreria.push(libro3); */
+
+const URLLIBROS = "../data/libros.json";
 
 //generador de card en html
 const mostrarLibros = () => {
-    for (const libro of libreria){
-        let contenedor = document.createElement('div');
-        contenedor.innerHTML =
-        `
-        <div class="producto">
-            <img src="${libro.imagen}">
-            <div class="producto-texto">
-                <h3 class="producto_nombre">${libro.titulo}</h3>
-                <h4>${libro.autor}</h4>
-                <p>ar$ ${libro.precio}</p>
+    $.get(URLLIBROS, function (respuesta) {
+        console.log ("respuesta", respuesta);
+        let libreria = respuesta;
+        for (const libro of libreria){
+            $("#libros").append(`
+            <div class="producto">
+                <img src="${libro.imagen}">
+                <div class="producto-texto">
+                    <h3 class="producto_nombre">${libro.titulo}</h3>
+                    <h4>${libro.autor}</h4>
+                    <p>ar$ ${libro.precio}</p>
+                </div>
+                <div class="producto-boton">
+                    <a href="${libro.link}" target="_blank">Comprar</a>
+                </div>
             </div>
-            <div class="producto-boton">
-                <a href="${libro.link}" target="_blank">Comprar</a>
-            </div>
-        </div>
-        `
-        document.getElementById('libros').appendChild(contenedor);
-    }
+            `)
+        }
+    })
 }
 
 
