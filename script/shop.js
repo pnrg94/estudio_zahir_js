@@ -1,3 +1,5 @@
+//constructor de libros
+
 /* //constructor de libros
 class libro{
     constructor (id, titulo, autor, precio, imagen, link){
@@ -24,10 +26,33 @@ libreria.push(libro3); */
 
 const URLLIBROS = "../data/libros.json";
 
+//constructor de libros
+class libro{
+    constructor (id, titulo, autor, precio, imagen){
+        this.id = id;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.precio = parseFloat(precio);
+        this.imagen = imagen;
+    }
+}
+
+const libreria = [];
+
+const agregarLibros = () => {
+    $.get(URLLIBROS, function (respuesta) {
+        let json = respuesta;
+        for (const objeto of json){
+            libreria.push(new libro(objeto));
+        }
+    })
+}
+
+console.log(libreria);
+
 //generador de card en html
 const mostrarLibros = () => {
     $.get(URLLIBROS, function (respuesta) {
-        console.log ("respuesta", respuesta);
         let libreria = respuesta;
         for (const libro of libreria){
             $("#libros").append(`
@@ -39,13 +64,26 @@ const mostrarLibros = () => {
                     <p>ar$ ${libro.precio}</p>
                 </div>
                 <div class="producto-boton">
-                    <a href="${libro.link}" target="_blank">Comprar</a>
+                    <a href="#" onclick=obtenerCantidadProductos(${libro.id})>Comprar</a>
                 </div>
             </div>
-            `)
+            `);
         }
     })
 }
+
+//carrito
+const obtenerCantidadProductos = (idProducto) => {
+    let elemento = document.getElementsByClassName("productosCarrito")[0];
+    let cantidad = parseInt(elemento.innerHTML) + 1;
+    elemento.innerHTML = cantidad;
+    agregarProductoAlCarrito(idProducto);
+}
+
+/* const agregarProductoAlCarrito = (idProducto) => {
+    let productoComprado = libreria.find(x => x.id == idProducto);
+    console.log(productoComprado);
+} */
 
 
 
@@ -58,7 +96,6 @@ class merch{
         this.precio = parseFloat(precio);
         this.imagen = imagen;
         this.link = link;
-        //this.ejemplares = parseInt(ejemplares);
     }
 }
 

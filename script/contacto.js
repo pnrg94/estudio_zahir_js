@@ -60,25 +60,18 @@ $("#email").blur((a) =>{
 
 const formularios = [];
 
-$('#guardarFormulario').submit(function (e){
+$('#guardarFormulario').click(function (e){
     e.preventDefault();
-
-/*     if ($("#nombre-apellido").val() == ""){
+    if ($("#nombre-apellido").val() < 3){
         return;
     } 
-    if ($("#email").val() == ""){
+    if($("#email").val().indexOf('@', 0) == -1 || $("#email").val().indexOf('.', 0) == -1) {
         return;
     }
-*/
     const formulario = new Formulario ($("#nombre-apellido").val(), $("#email").val(), $("#pais").val(), $("#como-nos-conociste").val(), $("#producto-servicio").val(), $("#lineas").val(), $("#personalidad").val(), $("#marcas").val(), $("#piezas").val())
     formularios.push(formulario);
     localStorage.setItem("formularios", JSON.stringify(formularios));
+    $('#configform')[0].reset();
+    
+    $(".gracias").fadeIn(1000)
 });
-
-
-const mostrarFormulario = () => {
-    const formularios = JSON.parse(localStorage.getItem("formularios"));
-    console.log(formularios);
-}
-
-
