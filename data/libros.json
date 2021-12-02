@@ -1,7 +1,7 @@
 [
     {
         "id" : 1,
-        "titulo" : "El Alepha",
+        "titulo" : "El Aleph",
         "autor" : "Jorge Luis Borges",
         "precio" : 3500,
         "imagen" : "../images/shop/productos/el_aleph.jpg"
