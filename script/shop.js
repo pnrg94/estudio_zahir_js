@@ -77,7 +77,6 @@ const agregarProductoAlCarrito = (idProducto) => {
     let productoComprado = libreria.find(x => x.id == idProducto);
     carrito.push(productoComprado);
     localStorage.setItem("carrito", JSON.stringify(carrito));
-    console.log(carrito);
 }
 
 
