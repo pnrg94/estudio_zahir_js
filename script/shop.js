@@ -1,28 +1,3 @@
-//constructor de libros
-
-/* //constructor de libros
-class libro{
-    constructor (id, titulo, autor, precio, imagen, link){
-        this.id = id;
-        this.titulo = titulo;
-        this.autor = autor;
-        this.precio = parseFloat(precio);
-        this.imagen = imagen;
-        this.link = link;
-        //this.ejemplares = parseInt(ejemplares);
-    }
-}
-
-//librería
-const libreria = [];
-
-const libro1 = new libro(1, "El Alepha", "Jorge Luis Borges", 3500, "../images/shop/productos/el_aleph.jpg", "https://www.mercadolibre.com.ar/");
-const libro2 = new libro(2, "Un día a la vez", "Zahir", 900, "../images/shop/productos/agenda_un_dia_a_la_vez.jpg", "https://www.mercadolibre.com.ar/");
-const libro3 = new libro(3, "Crónicas del cri...", "Varios autores", 2500, "../images/shop/productos/cronicas_del_crimen.jpg", "https://www.mercadolibre.com.ar/");
-
-libreria.push(libro1);
-libreria.push(libro2);
-libreria.push(libro3); */
 
 const URLLIBROS = "../data/libros.json";
 
@@ -52,35 +27,13 @@ const mostrarLibros = () => {
                     <p>ar$ ${libro.precio}</p>
                 </div>
                 <div class="producto-boton">
-                    <a href="#" onclick=obtenerCantidadProductos(${libro.id})>Comprar</a>
+                    <a href="https://www.mercadolibre.com.ar/" target="_blank">Comprar</a>
                 </div>
             </div>
             `);
         }
     })
 }
-
-
-
-//carrito
-
-const carrito = [];
-
-const obtenerCantidadProductos = (idProducto) => {
-    let elemento = document.getElementsByClassName("productosCarrito")[0];
-    let cantidad = parseInt(elemento.innerHTML) + 1;
-    elemento.innerHTML = cantidad;
-    agregarProductoAlCarrito(idProducto);
-}
-
-const agregarProductoAlCarrito = (idProducto) => {
-    let productoComprado = libreria.find(x => x.id == idProducto);
-    carrito.push(productoComprado);
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-}
-
-
-
 
 
 //constructor de merch

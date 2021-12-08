@@ -4,23 +4,20 @@
         "titulo" : "El Aleph",
         "autor" : "Jorge Luis Borges",
         "precio" : 3500,
-        "imagen" : "../images/shop/productos/el_aleph.jpg",
-        "cantidad" : 1
+        "imagen" : "../images/shop/productos/el_aleph.jpg"
     },
     {
         "id" : 2,
         "titulo" : "Un día a la vez",
         "autor" : "Zahir",
         "precio" : 3500,
-        "imagen" : "../images/shop/productos/agenda_un_dia_a_la_vez.jpg",
-        "cantidad" : 1
+        "imagen" : "../images/shop/productos/agenda_un_dia_a_la_vez.jpg"
     },
     {
         "id" : 3,
         "titulo" : "Crónicas del cri...",
         "autor" : "Varios autores",
         "precio" : 3500,
-        "imagen" : "../images/shop/productos/cronicas_del_crimen.jpg",
-        "cantidad" : 1
+        "imagen" : "../images/shop/productos/cronicas_del_crimen.jpg"
     }
 ]
